@@ -29,7 +29,7 @@ import getRoute from './lib/get-route.js';
 
 let tagValue, tagValidate, track, tagForProperty;
 
-const GlimmerDebugComponent = (() => GlimmerComponent?.default)();
+const GlimmerDebugComponent = (() => GlimmerComponent?.default || GlimmerComponent)();
 
 const OWNER_SYMBOL = '__owner__'; // can't use actual symbol because it can't be cloned
 
